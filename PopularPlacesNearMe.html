@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_dfae7254b0134220993e101f22a76f64 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_dfae7254b0134220993e101f22a76f64" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_dfae7254b0134220993e101f22a76f64 = L.map(
+        'map_dfae7254b0134220993e101f22a76f64', {
+        center: [12.9963426, 77.6954215],
+        zoom: 14,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_135aebc3cbc34cb793dda56c94da13f0 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_dfae7254b0134220993e101f22a76f64);
+    
+            var circle_marker_a1291fef0eff4cc0882454c344189e63 = L.circleMarker(
+                [12.9963426, 77.6954215],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_a43bb7034d594db78a0436261ba52534 = L.marker(
+            [12.9963426, 77.6954215],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+
+                var icon_55668971108f48f9b8171847423beac4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a43bb7034d594db78a0436261ba52534.setIcon(icon_55668971108f48f9b8171847423beac4);
+            
+    
+            var popup_37e219651c3441a2a4d7373d86987bc4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_42a7229253224f32ab363ff893eb9166 = $(`<div id="html_42a7229253224f32ab363ff893eb9166" style="width: 100.0%; height: 100.0%;"><strong> Current Location</strong></div>`)[0];
+                popup_37e219651c3441a2a4d7373d86987bc4.setContent(html_42a7229253224f32ab363ff893eb9166);
+            
+
+            marker_a43bb7034d594db78a0436261ba52534.bindPopup(popup_37e219651c3441a2a4d7373d86987bc4)
+            ;
+
+            
+        
+    
+
+            var circle_1a4f7a3eb2d44ef4bffedb2488852335 = L.circle(
+                [12.9963426, 77.6954215],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 0.5,
+  "radius": "2000",
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+            var circle_marker_3e4a6908d18e459289ecee1683bce094 = L.circleMarker(
+                [12.997361986513575, 77.69674382065826],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_b84f869b8ee146198b4e0adacf9c9210 = L.marker(
+            [12.997361986513575, 77.69674382065826],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_26c0c1a635254fb6ae7605d01de29384 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_5c13265b39104240a4322987380c4c27 = $(`<div id="html_5c13265b39104240a4322987380c4c27" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>BelgYum</strong><br><strong><font color ="red">Categorie :    </font>Creperie</strong><br><strong><font color ="red">Address :    </font>Phoenix Market City</strong><br><strong><font color ="red">Distance :    </font>182 mts</strong></div>`)[0];
+                popup_26c0c1a635254fb6ae7605d01de29384.setContent(html_5c13265b39104240a4322987380c4c27);
+            
+
+            marker_b84f869b8ee146198b4e0adacf9c9210.bindPopup(popup_26c0c1a635254fb6ae7605d01de29384)
+            ;
+
+            
+        
+    
+            var circle_marker_c9553b0f6ef440b999d6196afcb5c3a3 = L.circleMarker(
+                [12.997342644958144, 77.69628846905438],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_d2c084011ed947948b5b78d46eea5579 = L.marker(
+            [12.997342644958144, 77.69628846905438],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_b59cb2d6f4294d7eb5d7b1d2f56500ba = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_04fae75a095a446290c871cce38fd2ec = $(`<div id="html_04fae75a095a446290c871cce38fd2ec" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Whitefield Social</strong><br><strong><font color ="red">Categorie :    </font>Lounge</strong><br><strong><font color ="red">Address :    </font>Not found</strong><br><strong><font color ="red">Distance :    </font>145 mts</strong></div>`)[0];
+                popup_b59cb2d6f4294d7eb5d7b1d2f56500ba.setContent(html_04fae75a095a446290c871cce38fd2ec);
+            
+
+            marker_d2c084011ed947948b5b78d46eea5579.bindPopup(popup_b59cb2d6f4294d7eb5d7b1d2f56500ba)
+            ;
+
+            
+        
+    
+            var circle_marker_8eb276f7c0ed49a386e34e0d684ca894 = L.circleMarker(
+                [12.996194303689908, 77.69536252762013],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_2be7986185a44e959bedb7ed865d7318 = L.marker(
+            [12.996194303689908, 77.69536252762013],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_8769abc6a6b24885bd058f6ba472de8f = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_733a869f65e84565a6ce226400d6d00e = $(`<div id="html_733a869f65e84565a6ce226400d6d00e" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>PVR IMAX VR Bangalore</strong><br><strong><font color ="red">Categorie :    </font>Movie Theater</strong><br><strong><font color ="red">Address :    </font>Not found</strong><br><strong><font color ="red">Distance :    </font>17 mts</strong></div>`)[0];
+                popup_8769abc6a6b24885bd058f6ba472de8f.setContent(html_733a869f65e84565a6ce226400d6d00e);
+            
+
+            marker_2be7986185a44e959bedb7ed865d7318.bindPopup(popup_8769abc6a6b24885bd058f6ba472de8f)
+            ;
+
+            
+        
+    
+            var circle_marker_c2e0cb1df79f49a5bc2a9d760a7bd783 = L.circleMarker(
+                [12.99609462496371, 77.69539314772638],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_b106245bb04c47f88be83b44a5c2c0bc = L.marker(
+            [12.99609462496371, 77.69539314772638],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_6b1926140b544d22857da307962d5932 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_d14fe8c8b58a4e7780f4da8a22204ab7 = $(`<div id="html_d14fe8c8b58a4e7780f4da8a22204ab7" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>VR Bengaluru</strong><br><strong><font color ="red">Categorie :    </font>Shopping Mall</strong><br><strong><font color ="red">Address :    </font>Not found</strong><br><strong><font color ="red">Distance :    </font>27 mts</strong></div>`)[0];
+                popup_6b1926140b544d22857da307962d5932.setContent(html_d14fe8c8b58a4e7780f4da8a22204ab7);
+            
+
+            marker_b106245bb04c47f88be83b44a5c2c0bc.bindPopup(popup_6b1926140b544d22857da307962d5932)
+            ;
+
+            
+        
+    
+            var circle_marker_1819a790b024413aacbfcac319a7f515 = L.circleMarker(
+                [12.9974177, 77.6965593],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_e2101935f16b4ac0b0d82e356920b457 = L.marker(
+            [12.9974177, 77.6965593],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_1c61308c2b8e4a60b6312f8993b60871 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_acdee4f3cb674613ac4943d489f7a785 = $(`<div id="html_acdee4f3cb674613ac4943d489f7a785" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Phoenix Marketcity</strong><br><strong><font color ="red">Categorie :    </font>Shopping Mall</strong><br><strong><font color ="red">Address :    </font>Whitefield Main Rd</strong><br><strong><font color ="red">Distance :    </font>171 mts</strong></div>`)[0];
+                popup_1c61308c2b8e4a60b6312f8993b60871.setContent(html_acdee4f3cb674613ac4943d489f7a785);
+            
+
+            marker_e2101935f16b4ac0b0d82e356920b457.bindPopup(popup_1c61308c2b8e4a60b6312f8993b60871)
+            ;
+
+            
+        
+    
+            var circle_marker_8f6daab8f9d2427a8897583ede8ae473 = L.circleMarker(
+                [12.995941913361872, 77.69579541534833],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_73f281d4091d4d4dac14ceafb0505c1f = L.marker(
+            [12.995941913361872, 77.69579541534833],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_eaf17881a3dd4acdb28f94e77a13ec75 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_b941b69ce11c431b8a69d82cd3eb9c52 = $(`<div id="html_b941b69ce11c431b8a69d82cd3eb9c52" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Toscano</strong><br><strong><font color ="red">Categorie :    </font>Italian Restaurant</strong><br><strong><font color ="red">Address :    </font>Not found</strong><br><strong><font color ="red">Distance :    </font>60 mts</strong></div>`)[0];
+                popup_eaf17881a3dd4acdb28f94e77a13ec75.setContent(html_b941b69ce11c431b8a69d82cd3eb9c52);
+            
+
+            marker_73f281d4091d4d4dac14ceafb0505c1f.bindPopup(popup_eaf17881a3dd4acdb28f94e77a13ec75)
+            ;
+
+            
+        
+    
+            var circle_marker_bfb07259a89545329efe21d86cf08167 = L.circleMarker(
+                [12.997499160896615, 77.69665464915404],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_0944088168e341979eb3c77a2f64e5ab = L.marker(
+            [12.997499160896615, 77.69665464915404],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_3030d2ca91de41fb803f0c032c533de6 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_4803b295223542379250fa38bc2d0cd9 = $(`<div id="html_4803b295223542379250fa38bc2d0cd9" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Hamleys</strong><br><strong><font color ="red">Categorie :    </font>Toy / Game Store</strong><br><strong><font color ="red">Address :    </font>Phoenix Market City</strong><br><strong><font color ="red">Distance :    </font>185 mts</strong></div>`)[0];
+                popup_3030d2ca91de41fb803f0c032c533de6.setContent(html_4803b295223542379250fa38bc2d0cd9);
+            
+
+            marker_0944088168e341979eb3c77a2f64e5ab.bindPopup(popup_3030d2ca91de41fb803f0c032c533de6)
+            ;
+
+            
+        
+    
+            var circle_marker_7f944e4c030f474faa5fdc4a4e8a82f7 = L.circleMarker(
+                [12.997530930236348, 77.69581332671787],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_673109aab230498994b6be6a3788da74 = L.marker(
+            [12.997530930236348, 77.69581332671787],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_cd6f7faa1e7f4b05bf44610a9daadbbc = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_672495bdb65b4cb68703efee71185c5e = $(`<div id="html_672495bdb65b4cb68703efee71185c5e" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>PVR Market City</strong><br><strong><font color ="red">Categorie :    </font>Multiplex</strong><br><strong><font color ="red">Address :    </font>The Phoenix Market City Mall</strong><br><strong><font color ="red">Distance :    </font>138 mts</strong></div>`)[0];
+                popup_cd6f7faa1e7f4b05bf44610a9daadbbc.setContent(html_672495bdb65b4cb68703efee71185c5e);
+            
+
+            marker_673109aab230498994b6be6a3788da74.bindPopup(popup_cd6f7faa1e7f4b05bf44610a9daadbbc)
+            ;
+
+            
+        
+    
+            var circle_marker_04e36cfb9bec4bce8788baf8363fe241 = L.circleMarker(
+                [12.994772326527803, 77.70106608600994],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_9a4be6641482413589eceb60ac3938f1 = L.marker(
+            [12.994772326527803, 77.70106608600994],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_3af8da9ba42943729bae25ef12addeb3 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_c7044ab8f7ac410fb095f49e8ca34573 = $(`<div id="html_c7044ab8f7ac410fb095f49e8ca34573" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Decathlon Sports India (DSI) HQ</strong><br><strong><font color ="red">Categorie :    </font>Office</strong><br><strong><font color ="red">Address :    </font>Xylem Building, ITPL Main Road, Whitefield</strong><br><strong><font color ="red">Distance :    </font>636 mts</strong></div>`)[0];
+                popup_3af8da9ba42943729bae25ef12addeb3.setContent(html_c7044ab8f7ac410fb095f49e8ca34573);
+            
+
+            marker_9a4be6641482413589eceb60ac3938f1.bindPopup(popup_3af8da9ba42943729bae25ef12addeb3)
+            ;
+
+            
+        
+    
+            var circle_marker_07b9d27d65fc41ff88db6b713bfa4461 = L.circleMarker(
+                [12.994829948194463, 77.70100963135611],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_115a5d7b3191441598e99601be1ea642 = L.marker(
+            [12.994829948194463, 77.70100963135611],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_1ddbcf8d3c624320a58a84b06359d532 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_34adf35d4e5c4745b33997fea461e4fe = $(`<div id="html_34adf35d4e5c4745b33997fea461e4fe" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Decathlon</strong><br><strong><font color ="red">Categorie :    </font>Sporting Goods Shop</strong><br><strong><font color ="red">Address :    </font>Mahadevapura</strong><br><strong><font color ="red">Distance :    </font>629 mts</strong></div>`)[0];
+                popup_1ddbcf8d3c624320a58a84b06359d532.setContent(html_34adf35d4e5c4745b33997fea461e4fe);
+            
+
+            marker_115a5d7b3191441598e99601be1ea642.bindPopup(popup_1ddbcf8d3c624320a58a84b06359d532)
+            ;
+
+            
+        
+    
+            var circle_marker_cda9eea4c62344aeb7aa182f49afaf1e = L.circleMarker(
+                [12.997059253478586, 77.69599032859159],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_637aaf7f095a4538a38cde7011fba3cd = L.marker(
+            [12.997059253478586, 77.69599032859159],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_4a1ba49f29a542cba568e7fda33df85b = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_8f7fc6f653274312b4172057fdabfcf7 = $(`<div id="html_8f7fc6f653274312b4172057fdabfcf7" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Cafe Noir</strong><br><strong><font color ="red">Categorie :    </font>French Restaurant</strong><br><strong><font color ="red">Address :    </font>Phoenix Market City</strong><br><strong><font color ="red">Distance :    </font>100 mts</strong></div>`)[0];
+                popup_4a1ba49f29a542cba568e7fda33df85b.setContent(html_8f7fc6f653274312b4172057fdabfcf7);
+            
+
+            marker_637aaf7f095a4538a38cde7011fba3cd.bindPopup(popup_4a1ba49f29a542cba568e7fda33df85b)
+            ;
+
+            
+        
+    
+            var circle_marker_2d0f66ffad2846129cf6bef88698314d = L.circleMarker(
+                [12.996190438555647, 77.69628612859735],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_1f3e36933aa14fd09791bf78976102d2 = L.marker(
+            [12.996190438555647, 77.69628612859735],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_4755d6ecd28a4729bc4be733423b6523 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_df665181e95a43f4a0624e6d039aee5c = $(`<div id="html_df665181e95a43f4a0624e6d039aee5c" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Zara</strong><br><strong><font color ="red">Categorie :    </font>Clothing Store</strong><br><strong><font color ="red">Address :    </font>UG 04 & 07, Phoenix Market City Mall</strong><br><strong><font color ="red">Distance :    </font>95 mts</strong></div>`)[0];
+                popup_4755d6ecd28a4729bc4be733423b6523.setContent(html_df665181e95a43f4a0624e6d039aee5c);
+            
+
+            marker_1f3e36933aa14fd09791bf78976102d2.bindPopup(popup_4755d6ecd28a4729bc4be733423b6523)
+            ;
+
+            
+        
+    
+            var circle_marker_7d477d3f7f594c0b93c781eb05940825 = L.circleMarker(
+                [12.997412806563757, 77.69669743349078],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_b98f6b7c329344dbb73f6679e74db7c3 = L.marker(
+            [12.997412806563757, 77.69669743349078],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_20314d153c2e4998a64ff5540f581577 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_e398086572eb493e9895346fa6b3416d = $(`<div id="html_e398086572eb493e9895346fa6b3416d" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Mad Over Donuts</strong><br><strong><font color ="red">Categorie :    </font>Donut Shop</strong><br><strong><font color ="red">Address :    </font>Level 2, Food Court, Phoenix Marketcity Mall, Mahadevapura, Whitefield Road, (Landmark - Near Krinshnarajapuram Flyover)</strong><br><strong><font color ="red">Distance :    </font>182 mts</strong></div>`)[0];
+                popup_20314d153c2e4998a64ff5540f581577.setContent(html_e398086572eb493e9895346fa6b3416d);
+            
+
+            marker_b98f6b7c329344dbb73f6679e74db7c3.bindPopup(popup_20314d153c2e4998a64ff5540f581577)
+            ;
+
+            
+        
+    
+            var circle_marker_25808fcdfe1947b982cab7de6a234f9b = L.circleMarker(
+                [12.997666385406125, 77.69647710927578],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_2ca09482b4c54982a2587a9694b80098 = L.marker(
+            [12.997666385406125, 77.69647710927578],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_ec7ddbc3763f423980eae3cfd8fe8af7 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_596f8f36d784431085f237dabe84a597 = $(`<div id="html_596f8f36d784431085f237dabe84a597" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>PVR bluO</strong><br><strong><font color ="red">Categorie :    </font>Bowling Alley</strong><br><strong><font color ="red">Address :    </font>The Phoenix Market City, Level 2</strong><br><strong><font color ="red">Distance :    </font>186 mts</strong></div>`)[0];
+                popup_ec7ddbc3763f423980eae3cfd8fe8af7.setContent(html_596f8f36d784431085f237dabe84a597);
+            
+
+            marker_2ca09482b4c54982a2587a9694b80098.bindPopup(popup_ec7ddbc3763f423980eae3cfd8fe8af7)
+            ;
+
+            
+        
+    
+            var circle_marker_b4d0e5b0f59e4e11a7960b895519007c = L.circleMarker(
+                [12.992017953117452, 77.70298259854835],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_67a001d878a547c0833e1bb6f6b9f6b0 = L.marker(
+            [12.992017953117452, 77.70298259854835],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_0f34e0da0fe640eea576a98390b37605 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_be6c283fd6534dca8a6253b224bfc74c = $(`<div id="html_be6c283fd6534dca8a6253b224bfc74c" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Masala Chai</strong><br><strong><font color ="red">Categorie :    </font>Café</strong><br><strong><font color ="red">Address :    </font>Brigade Metropolis</strong><br><strong><font color ="red">Distance :    </font>950 mts</strong></div>`)[0];
+                popup_0f34e0da0fe640eea576a98390b37605.setContent(html_be6c283fd6534dca8a6253b224bfc74c);
+            
+
+            marker_67a001d878a547c0833e1bb6f6b9f6b0.bindPopup(popup_0f34e0da0fe640eea576a98390b37605)
+            ;
+
+            
+        
+    
+            var circle_marker_f002c4aab1414d9b871e20e4eb1d0ccb = L.circleMarker(
+                [12.99699947368094, 77.69671225086135],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_bec4a350666644c8a0bf780088c54240 = L.marker(
+            [12.99699947368094, 77.69671225086135],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_58da0be51d1c470e8d64fea599804121 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_5c17e5e6883141e8b4905b53248b1f11 = $(`<div id="html_5c17e5e6883141e8b4905b53248b1f11" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Zara Men</strong><br><strong><font color ="red">Categorie :    </font>Men's Store</strong><br><strong><font color ="red">Address :    </font>Not found</strong><br><strong><font color ="red">Distance :    </font>157 mts</strong></div>`)[0];
+                popup_58da0be51d1c470e8d64fea599804121.setContent(html_5c17e5e6883141e8b4905b53248b1f11);
+            
+
+            marker_bec4a350666644c8a0bf780088c54240.bindPopup(popup_58da0be51d1c470e8d64fea599804121)
+            ;
+
+            
+        
+    
+            var circle_marker_2b45f3f202de4f96b4ffb5769445c65d = L.circleMarker(
+                [12.997658202404063, 77.69666483442755],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_39a6c1518d9146e19a771c6e0efe54ad = L.marker(
+            [12.997658202404063, 77.69666483442755],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_0ead544ba5964f7ca2f111dd2bb65cc4 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_6ec47011c5b145bfbfc35b962b80924b = $(`<div id="html_6ec47011c5b145bfbfc35b962b80924b" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Krispy Kreme Doughnuts</strong><br><strong><font color ="red">Categorie :    </font>Donut Shop</strong><br><strong><font color ="red">Address :    </font>LG</strong><br><strong><font color ="red">Distance :    </font>199 mts</strong></div>`)[0];
+                popup_0ead544ba5964f7ca2f111dd2bb65cc4.setContent(html_6ec47011c5b145bfbfc35b962b80924b);
+            
+
+            marker_39a6c1518d9146e19a771c6e0efe54ad.bindPopup(popup_0ead544ba5964f7ca2f111dd2bb65cc4)
+            ;
+
+            
+        
+    
+            var circle_marker_7c6e1931aa46410cab83c350dcab96a1 = L.circleMarker(
+                [12.997597914360414, 77.69660360816789],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_bf32e006001548f59c5f343085ba3eaf = L.marker(
+            [12.997597914360414, 77.69660360816789],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_83368dfe284149c6b264e24431061a06 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_b88a08a71aa245499a0be114900c4d5d = $(`<div id="html_b88a08a71aa245499a0be114900c4d5d" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Barley & Grapes Cafe</strong><br><strong><font color ="red">Categorie :    </font>American Restaurant</strong><br><strong><font color ="red">Address :    </font>Lower Ground Floor, Phoenix Market City,</strong><br><strong><font color ="red">Distance :    </font>189 mts</strong></div>`)[0];
+                popup_83368dfe284149c6b264e24431061a06.setContent(html_b88a08a71aa245499a0be114900c4d5d);
+            
+
+            marker_bf32e006001548f59c5f343085ba3eaf.bindPopup(popup_83368dfe284149c6b264e24431061a06)
+            ;
+
+            
+        
+    
+            var circle_marker_11018e4d48f646458c80027a5f099038 = L.circleMarker(
+                [12.99746030988021, 77.69665928067198],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_fcb6b5e202ef4ecfa05532699d597a7a = L.marker(
+            [12.99746030988021, 77.69665928067198],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_2dba8c1aef15490fb8225f88759dbd0a = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_3b5d372937a84ec1990408fa1865662d = $(`<div id="html_3b5d372937a84ec1990408fa1865662d" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Kalmane Koffees</strong><br><strong><font color ="red">Categorie :    </font>Café</strong><br><strong><font color ="red">Address :    </font>#28B, Lower Grnd Flr, Phoenix Market City Mall</strong><br><strong><font color ="red">Distance :    </font>183 mts</strong></div>`)[0];
+                popup_2dba8c1aef15490fb8225f88759dbd0a.setContent(html_3b5d372937a84ec1990408fa1865662d);
+            
+
+            marker_fcb6b5e202ef4ecfa05532699d597a7a.bindPopup(popup_2dba8c1aef15490fb8225f88759dbd0a)
+            ;
+
+            
+        
+    
+            var circle_marker_6ccba8fa215b4ca7b37cfd98561bd456 = L.circleMarker(
+                [12.996162369127479, 77.69503542489836],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_fab987fcd71a4988957e902976bf929d = L.marker(
+            [12.996162369127479, 77.69503542489836],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_3654d26ed22a4e69acf0202e46197075 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_ac88936734dc4207b14a4af2cdeebfca = $(`<div id="html_ac88936734dc4207b14a4af2cdeebfca" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>The Irish House</strong><br><strong><font color ="red">Categorie :    </font>Bar</strong><br><strong><font color ="red">Address :    </font>3rd floor, VR Mall</strong><br><strong><font color ="red">Distance :    </font>46 mts</strong></div>`)[0];
+                popup_3654d26ed22a4e69acf0202e46197075.setContent(html_ac88936734dc4207b14a4af2cdeebfca);
+            
+
+            marker_fab987fcd71a4988957e902976bf929d.bindPopup(popup_3654d26ed22a4e69acf0202e46197075)
+            ;
+
+            
+        
+    
+            var circle_marker_69cdc081fafd4b5e92ba4122fabc6104 = L.circleMarker(
+                [12.996910435233913, 77.69620226786674],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_c98174a3d9984ee494b2f280d4b13036 = L.marker(
+            [12.996910435233913, 77.69620226786674],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_0030b9497a2543dea4e7aac053ba11a2 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_35fe160a40554acaaf992ed9b583415b = $(`<div id="html_35fe160a40554acaaf992ed9b583415b" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Blu O</strong><br><strong><font color ="red">Categorie :    </font>Bowling Alley</strong><br><strong><font color ="red">Address :    </font>2nd Floor, Phoenix Market City</strong><br><strong><font color ="red">Distance :    </font>105 mts</strong></div>`)[0];
+                popup_0030b9497a2543dea4e7aac053ba11a2.setContent(html_35fe160a40554acaaf992ed9b583415b);
+            
+
+            marker_c98174a3d9984ee494b2f280d4b13036.bindPopup(popup_0030b9497a2543dea4e7aac053ba11a2)
+            ;
+
+            
+        
+    
+            var circle_marker_73992384f286430ebdbc81c8993a4bc2 = L.circleMarker(
+                [12.996121967316679, 77.69537688400081],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_99f58f32ceb04eb4bbc1c628ebb80c05 = L.marker(
+            [12.996121967316679, 77.69537688400081],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_97630b2d19924c5ea804c913ce8b57fc = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_1a1ff92cec194fdf8fca40d7d88948d9 = $(`<div id="html_1a1ff92cec194fdf8fca40d7d88948d9" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Starbucks</strong><br><strong><font color ="red">Categorie :    </font>Coffee Shop</strong><br><strong><font color ="red">Address :    </font>Lower Ground Floor, VR Bengaluru</strong><br><strong><font color ="red">Distance :    </font>25 mts</strong></div>`)[0];
+                popup_97630b2d19924c5ea804c913ce8b57fc.setContent(html_1a1ff92cec194fdf8fca40d7d88948d9);
+            
+
+            marker_99f58f32ceb04eb4bbc1c628ebb80c05.bindPopup(popup_97630b2d19924c5ea804c913ce8b57fc)
+            ;
+
+            
+        
+    
+            var circle_marker_cd9f8d286c414a97822e8ccb6ed92f42 = L.circleMarker(
+                [12.99653898466793, 77.69592931626674],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_86c568f2a6ea480d99c282580a35e846 = L.marker(
+            [12.99653898466793, 77.69592931626674],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_cd57fb7f1a1043868dc41d2bb9b1a39d = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_a6e5fe3b0319408b994c120fcc425bf0 = $(`<div id="html_a6e5fe3b0319408b994c120fcc425bf0" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>The Whitefield Arms Café</strong><br><strong><font color ="red">Categorie :    </font>Lounge</strong><br><strong><font color ="red">Address :    </font>Ground Floor, VR Bengaluru</strong><br><strong><font color ="red">Distance :    </font>59 mts</strong></div>`)[0];
+                popup_cd57fb7f1a1043868dc41d2bb9b1a39d.setContent(html_a6e5fe3b0319408b994c120fcc425bf0);
+            
+
+            marker_86c568f2a6ea480d99c282580a35e846.bindPopup(popup_cd57fb7f1a1043868dc41d2bb9b1a39d)
+            ;
+
+            
+        
+    
+            var circle_marker_bdaf3a4a2a2d4919a42ef669547c6096 = L.circleMarker(
+                [12.99737622619676, 77.70116634636258],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_f6a774c36aed43f08dbad1b08977a90e = L.marker(
+            [12.99737622619676, 77.70116634636258],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_71d21f793bd0447b99cd8cc0018777cf = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_4cbe42f1a74f4a5ca383d969327b23c4 = $(`<div id="html_4cbe42f1a74f4a5ca383d969327b23c4" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>CounterCulture</strong><br><strong><font color ="red">Categorie :    </font>Performing Arts Venue</strong><br><strong><font color ="red">Address :    </font>2D2, 4th Cross, Devasandra Industrial Area, Whitefield Rd.</strong><br><strong><font color ="red">Distance :    </font>633 mts</strong></div>`)[0];
+                popup_71d21f793bd0447b99cd8cc0018777cf.setContent(html_4cbe42f1a74f4a5ca383d969327b23c4);
+            
+
+            marker_f6a774c36aed43f08dbad1b08977a90e.bindPopup(popup_71d21f793bd0447b99cd8cc0018777cf)
+            ;
+
+            
+        
+    
+            var circle_marker_ff2fc51c873c412e8244846b0b155066 = L.circleMarker(
+                [12.997695608812341, 77.69643160349597],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_1b6f56cc0c4147198673821edb8746cf = L.marker(
+            [12.997695608812341, 77.69643160349597],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_51a0d03c2a2f411f8fade4ecb52733d5 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_b71ef9645f844d09a7daf9e3d7fe9fb6 = $(`<div id="html_b71ef9645f844d09a7daf9e3d7fe9fb6" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Shizusan Shophouse & Bar</strong><br><strong><font color ="red">Categorie :    </font>Asian Restaurant</strong><br><strong><font color ="red">Address :    </font>2nd Floor, Phoenix Marketcity Bengaluru</strong><br><strong><font color ="red">Distance :    </font>186 mts</strong></div>`)[0];
+                popup_51a0d03c2a2f411f8fade4ecb52733d5.setContent(html_b71ef9645f844d09a7daf9e3d7fe9fb6);
+            
+
+            marker_1b6f56cc0c4147198673821edb8746cf.bindPopup(popup_51a0d03c2a2f411f8fade4ecb52733d5)
+            ;
+
+            
+        
+    
+            var circle_marker_ab026e93ecb346bb991230daac44d6e6 = L.circleMarker(
+                [12.997453876161458, 77.6962873180933],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_1fbc47b5d8734f6e91eaf52e0b39bce6 = L.marker(
+            [12.997453876161458, 77.6962873180933],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_87030cb24d6f43f1b0fcfeadd5a46d13 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_c805bab6ccf54ec786fe05b66a1b1417 = $(`<div id="html_c805bab6ccf54ec786fe05b66a1b1417" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Plus91 - Cafe Bar</strong><br><strong><font color ="red">Categorie :    </font>Fast Food Restaurant</strong><br><strong><font color ="red">Address :    </font>Phoenix Market City, No. F-25, 1st Floor, Mahadevpura, Whitefield, Bengaluru</strong><br><strong><font color ="red">Distance :    </font>155 mts</strong></div>`)[0];
+                popup_87030cb24d6f43f1b0fcfeadd5a46d13.setContent(html_c805bab6ccf54ec786fe05b66a1b1417);
+            
+
+            marker_1fbc47b5d8734f6e91eaf52e0b39bce6.bindPopup(popup_87030cb24d6f43f1b0fcfeadd5a46d13)
+            ;
+
+            
+        
+    
+            var circle_marker_2cd42a4e06494a059fdd73f130c1d426 = L.circleMarker(
+                [12.997254649087745, 77.69628980611215],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_c72e3d4871dd4c6ba4983e1ae7ad1191 = L.marker(
+            [12.997254649087745, 77.69628980611215],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_fe7cb920ba9443a293169ce0c6ad0558 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_8318c591148b4c24a4b8114e3493f699 = $(`<div id="html_8318c591148b4c24a4b8114e3493f699" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Chili's Grill & Bar</strong><br><strong><font color ="red">Categorie :    </font>Tex-Mex Restaurant</strong><br><strong><font color ="red">Address :    </font>Phoenix  Market City</strong><br><strong><font color ="red">Distance :    </font>138 mts</strong></div>`)[0];
+                popup_fe7cb920ba9443a293169ce0c6ad0558.setContent(html_8318c591148b4c24a4b8114e3493f699);
+            
+
+            marker_c72e3d4871dd4c6ba4983e1ae7ad1191.bindPopup(popup_fe7cb920ba9443a293169ce0c6ad0558)
+            ;
+
+            
+        
+    
+            var circle_marker_c1170502684d48508de26e172e61f848 = L.circleMarker(
+                [12.995783380106202, 77.69626737133763],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_6a4361324f8449a5b6c8681264807758 = L.marker(
+            [12.995783380106202, 77.69626737133763],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_79d114b790f54eada745611e7c6ee839 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_18125046944e4f6f86049ed399161b43 = $(`<div id="html_18125046944e4f6f86049ed399161b43" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Starbucks</strong><br><strong><font color ="red">Categorie :    </font>Coffee Shop</strong><br><strong><font color ="red">Address :    </font>Phoenix Market City</strong><br><strong><font color ="red">Distance :    </font>110 mts</strong></div>`)[0];
+                popup_79d114b790f54eada745611e7c6ee839.setContent(html_18125046944e4f6f86049ed399161b43);
+            
+
+            marker_6a4361324f8449a5b6c8681264807758.bindPopup(popup_79d114b790f54eada745611e7c6ee839)
+            ;
+
+            
+        
+    
+            var circle_marker_2fea503649ea478595a9ebcf01cabcdd = L.circleMarker(
+                [12.995831, 77.696292],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_1695ba9377d044cfb2cbcaa8bf0fd135 = L.marker(
+            [12.995831, 77.696292],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_90de6a523c5547d283ca439f7dc3c2a1 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_d3f375d378e44753b80670db2eddf96a = $(`<div id="html_d3f375d378e44753b80670db2eddf96a" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Lifestyle</strong><br><strong><font color ="red">Categorie :    </font>Clothing Store</strong><br><strong><font color ="red">Address :    </font>Phoenix mall</strong><br><strong><font color ="red">Distance :    </font>110 mts</strong></div>`)[0];
+                popup_90de6a523c5547d283ca439f7dc3c2a1.setContent(html_d3f375d378e44753b80670db2eddf96a);
+            
+
+            marker_1695ba9377d044cfb2cbcaa8bf0fd135.bindPopup(popup_90de6a523c5547d283ca439f7dc3c2a1)
+            ;
+
+            
+        
+    
+            var circle_marker_326bc223d97e4c1aa21587da7c136135 = L.circleMarker(
+                [12.997256318102112, 77.69617477796604],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_dfae7254b0134220993e101f22a76f64);
+            
+    
+        var marker_34d2d720864e49689debe537b9e35c47 = L.marker(
+            [12.997256318102112, 77.69617477796604],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_dfae7254b0134220993e101f22a76f64);
+        
+    
+            var popup_50943219beac432eaf26055fc7c61d33 = L.popup({maxWidth: '250'
+            
+            });
+
+            
+                var html_f6864cd92ee04cba8439b566c78b6001 = $(`<div id="html_f6864cd92ee04cba8439b566c78b6001" style="width: 100.0%; height: 100.0%;"><strong><font color ="red">Name :     </font>Café Noir</strong><br><strong><font color ="red">Categorie :    </font>French Restaurant</strong><br><strong><font color ="red">Address :    </font>36, Upper Ground floor</strong><br><strong><font color ="red">Distance :    </font>130 mts</strong></div>`)[0];
+                popup_50943219beac432eaf26055fc7c61d33.setContent(html_f6864cd92ee04cba8439b566c78b6001);
+            
+
+            marker_34d2d720864e49689debe537b9e35c47.bindPopup(popup_50943219beac432eaf26055fc7c61d33)
+            ;
+
+            
+        
+</script>
